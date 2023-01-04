@@ -8,13 +8,13 @@ import './index.css';
 
 // header navigation bar button
 
-const Button = ({ icon = <></>, text = '' }) => {
+const Button = ({ icon = <></>, text = '', link='' }) => {
   const location = useLocation();
 
   return (
     <Clickable
       className='nav_button size_medium'
-      to={'/' + text.toLowerCase()}
+      to={'/' + (link === '' ? text.toLowerCase() : link)}
       icon={icon}
       text={text}
       flip
@@ -25,6 +25,7 @@ const Button = ({ icon = <></>, text = '' }) => {
 
 Button.propTypes = {
   location: PropTypes.object,
+  link: PropTypes.string,
   icon: PropTypes.element.isRequired,
   text: PropTypes.string.isRequired
 };
