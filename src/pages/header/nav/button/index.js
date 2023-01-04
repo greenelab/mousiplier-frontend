@@ -8,17 +8,19 @@ import './index.css';
 
 // header navigation bar button
 
+const urlize = (text) => text.toLowerCase().replaceAll(/\s+/g, '-');
+
 const Button = ({ icon = <></>, text = '' }) => {
   const location = useLocation();
 
   return (
     <Clickable
       className='nav_button size_medium'
-      to={'/' + text.toLowerCase().replaceAll(/\s+/g, '-')}
+      to={'/' + urlize(text)}
       icon={icon}
       text={text}
       flip
-      data-active={location.pathname.toLowerCase().includes(text.toLowerCase())}
+      data-active={location.pathname.toLowerCase().includes(urlize(text))}
     />
   );
 };
