@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -42 60 60">
+  <!-- head -->
+  <path
+    fill="#ccbfcc"
+    d="
+      M -20 -8
+      A 22 22 0 0 1 -19.7 -22.4
+      A 9 9 -45 1 1 -7.1 -33.4
+      A 22 22 0 0 1 7.1 -33.4
+      A 9 9 45 1 1 19.7 -22.4
+      A 22 22 0 0 1 20 -8
+      C 18 -14 5 5 5 5
+      A 6 6 0 0 1 -5 5
+      C -5 5 -18 -14 -20 -8
+      z
+    "
+  />
+
+  <!-- small whiskers -->
+  <g stroke="#112f45" stroke-width="1" stroke-linecap="round">
+    <line transform="rotate(-10)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(-170)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(10)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(170)" x1="5" y="0" x2="22" y2="0" />
+  </g>
+
+  <!-- multiply whiskers -->
+  <g stroke="#112f45" stroke-width="2" stroke-linecap="round">
+    <line transform="rotate(-40)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(-140)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(40)" x1="5" y="0" x2="22" y2="0" />
+    <line transform="rotate(140)" x1="5" y="0" x2="22" y2="0" />
+  </g>
+
+  <!-- nose -->
+  <circle fill="#ff94bb" cx="0" cy="0" r="2.5" />
+
+  <!-- eyes -->
+  <g fill="#112f45">
+    <circle cx="-9" cy="-18" r="3" />
+    <circle cx="9" cy="-18" r="3" />
+  </g>
+</svg>
